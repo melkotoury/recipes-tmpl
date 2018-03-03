@@ -2,6 +2,7 @@
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 
+<!-- Mirrored from www.vasterad.com/themes/chow/recipe-page-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 02 Mar 2018 20:35:25 GMT -->
 <head>
 
 <!-- Basic Page Needs
@@ -65,7 +66,7 @@
 
 			<li><a href="browse-recipes.html">Recipes</a></li>
 			
-            <li><a href="contact.html" id="current">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
 
 			<li><a href="#">Login/Register</a>
 				<ul>
@@ -84,13 +85,13 @@
 -->
 
 			<li> 
-           <a href="#">
+           <a href="#" id="current">
          <img src="images/author-photo.png" alt="" class="img img-responsive img-circle nav-pp">
            <span class="profile-name-nav">Jane Doe</span> 
             </a>
 			    <ul>
                     <li><a href="my_recipes.html">My Recipes</a></li>
-                    <li><a href="my_reviews.html">My Reviews</a></li>
+                    <li><a href="my_ratings.html">My Ratings</a></li>
 			        <li><a href="submit-recipe.html">Submit Recipe</a></li>
 			        <li><a href=""><i class="fa fa-login"></i> Logout</a></li>
 			    </ul>
@@ -104,134 +105,106 @@
 <!-- Container / End -->
 </header>
 
-<!-- Titlebar
-================================================== -->
-<section id="titlebar">
-	<!-- Container -->
-	<div class="container">
 
-		<div class="eight columns">
-			<h2>Contact</h2>
-		</div>
-
-		<div class="eight columns">
-			<nav id="breadcrumbs">
-				<ul>
-					<li>You are here:</li>
-					<li><a href="#">Home</a></li>
-					<li>Contact</li>
-				</ul>
-			</nav>
-		</div>
-
-	</div>
-	<!-- Container / End -->
-</section>
-
+<!-- Recipe Background -->
+<div class="recipeBackground">
+	<img src="images/recipeBackground.jpg" alt="" />
+</div>
 
 
 <!-- Content
 ================================================== -->
+<div class="container" itemscope itemtype="http://schema.org/Recipe">
 
-<!-- Container -->
-<div class="container">
-	<div class="sixteen columns">
-		<div class="image-with-caption contact">
-			<img class="rsImg" src="images/contact.jpg" alt="" />
-			<span>Contact me with any questions</span>
-		</div>
-	</div>
-</div>
-<!-- Container / End -->
+	<!-- Recipe -->
+	<div class="twelve columns">
 
 
-<div class="margin-top-10"></div>
 
 
-<!-- Container -->
-<div class="container">
-
-<!-- Contact Form -->
-<div class="twelve columns">
-		<h3 class="headline">Contact Form</h3><span class="line margin-bottom-25"></span><div class="clearfix"></div>
-
-		<!-- Contact Form -->
-		<section id="contact">
-
-			<!-- Success Message -->
-			<mark id="message"></mark>
-
-			<!-- Form -->
-			<form method="post" name="contactform" id="contactform">
-
-				<fieldset>
-
-					<div>
-						<label>Name:</label>
-						<input name="name" type="text" id="name" />
-					</div>
-
-					<div>
-						<label >Email: <span>*</span></label>
-						<input name="email" type="email" id="email" pattern="^[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})$" />
-					</div>
-
-					<div>
-						<label>Message: <span>*</span></label>
-						<textarea name="comment" cols="40" rows="3" id="comment" spellcheck="true"></textarea>
-					</div>
-
-				</fieldset>
-				<div id="result"></div>
-				<input type="submit" class="submit" id="submit" value="Send Message" />
-				<div class="clearfix"></div>
-			</form>
-
-		</section>
-		<!-- Contact Form / End -->
-		<div class="margin-bottom-50"></div>
-</div>
-
-
-<!--
-<div class="four columns">
-
-	 Share 
-	<div class="widget">
-		<h4 class="headline">Share</h4>
-		<span class="line margin-bottom-30"></span>
-		<div class="clearfix"></div>
+		<!-- Comments
+		================================================== -->
+		<h3 class="headline">Reviews <span class="comments-amount">(4)</span></h3><span class="line"></span><div class="clearfix"></div>
 		
-		<ul class="share-buttons">
-			<li class="facebook-share">
-				<a href="#">
-					<span class="counter">1,234</span>
-					<span class="counted">Fans</span>
-					<span class="action-button">Like</span>
-				</a>
-			</li>
+			<!-- Reviews -->
+			<section class="comments" id="reviews">
 
-			<li class="twitter-share">
-				<a href="#">
-					<span class="counter">863</span>
-					<span class="counted">Followers</span>
-					<span class="action-button">Follow</span>
-				</a>
-			</li>
+				<ul>
+					<li>
+						<div class="avatar"><img src="http://www.gravatar.com/avatar/00000000000000000000000000000000?d=mm&amp;s=70" alt="" /></div>
+						<div class="comment-content"><div class="arrow-comment"></div>
+							<div class="comment-by"><strong>John Doe</strong><span class="date">7th, October 2014</span>
+								<a href="#" class="reply"><i class="fa fa-reply"></i> Open Recipe</a>
+							</div>
+							<p>Maecenas dignissim euismod nunc, in commodo est luctus eget. Proin in nunc laoreet justo volutpat blandit enim. Sem felis, ullamcorper vel aliquam non, varius eget just.</p>
+							<div class="rating five-stars">
+								<div class="star-rating"></div>
+								<div class="star-bg"></div>
+							</div>
+						</div>
 
-			<li class="google-plus-share">
-				<a href="#">
-					<span class="counter">902</span>
-					<span class="counted">Followers</span>
-					<span class="action-button">Follow</span>
-				</a>
-			</li>
-		</ul>
-		<div class="clearfix"></div>
+						<!-- Second Level -->
+<!--
+						<ul>
+							<li>
+								<div class="avatar"><img src="images/author-photo.png" alt="" /></div>
+								<div class="comment-content"><div class="arrow-comment"></div>
+								<div class="comment-by"><strong>Sandra Fortin</strong><span class="date">7th, October 2014</span>
+								<a href="#" class="reply"><i class="fa fa-reply"></i> Reply</a>
+								</div>
+								<p>Donec porttitor tortor sit amet tortor egestas, id suscipit magna cursus. Nam facilisis, mi vel elementum porttitor, sapien magna posuere lorem, sed consectetur.</p>
+								</div>
+							</li>
+						</ul>
+-->
+
+					</li>
+
+					<li>
+						<div class="avatar"><img src="http://www.gravatar.com/avatar/00000000000000000000000000000000?d=mm&amp;s=70" alt="" /></div>
+						<div class="comment-content"><div class="arrow-comment"></div>
+							<div class="comment-by"><strong>Kathy Brown</strong><span class="date">12th, October 2014</span>
+								<a href="#" class="reply"><i class="fa fa-reply"></i> Open Recipe</a>
+							</div>
+							<p>Morbi velit eros, sagittis in facilisis non, rhoncus et erat. Nam posuere tristique sem, eu ultricies tortor imperdiet vitae. Curabitur lacinia neque non metus</p>
+							<div class="rating ive-stars">
+									<div class="star-rating"></div>
+									<div class="star-bg"></div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="avatar"><img src="http://www.gravatar.com/avatar/00000000000000000000000000000000?d=mm&amp;s=70" alt="" /> </div>
+						<div class="comment-content"><div class="arrow-comment"></div>
+							<div class="comment-by"><strong>John Doe</strong><span class="date">15th, October 2014</span>
+								<a href="#" class="reply"><i class="fa fa-reply"></i> Open Recipe</a>
+							</div>
+							<p>Commodo est luctus eget. Proin in nunc laoreet justo volutpat blandit enim. Sem felis, ullamcorper vel aliquam non, varius eget justo. Duis quis nunc tellus sollicitudin mauris.</p>
+							<div class="rating four-stars">
+								<div class="star-rating"></div>
+								<div class="star-bg"></div>
+							</div>
+						</div>
+
+					</li>
+				 </ul>
+
+			</section>
+			<div class="clearfix"></div>
+			<br>
+
+
+		<!-- Add Comment
+		================================================== -->
+
+
+	</div>
 	</div>
 
-</div>
--->
+
+
+
 
 </div>
 <!-- Container / End -->
@@ -239,6 +212,7 @@
 
 </div>
 <!-- Wrapper / End -->
+
 
 <!-- Footer
 ================================================== -->
@@ -282,9 +256,9 @@
 			<div class="clearfix"></div>
 
 			<ul class="footer-links">
-				<li><a href="index.html">Home</a></li>
+				<li><a href="browse-recipes.html">Home</a></li>
 				<li><a href="about.html">About</a></li>
-				<li><a href="browse-recipes.html">Recipe</a></li>
+				<li><a href="recipe-page-1.html">Recipe</a></li>
 				<li><a href="contact.html">Contact</a></li>
 			</ul>
 
@@ -332,7 +306,7 @@
 
 <!-- Java Script
 ================================================== -->
-<script src="scripts/jquery-1.11.0.min.js"></script>
+<script data-cfasync="false" src="http://www.vasterad.com/cdn-cgi/scripts/d07b1474/cloudflare-static/email-decode.min.js"></script><script src="scripts/jquery-1.11.0.min.js"></script>
 <script src="scripts/jquery-migrate-1.2.1.min.js"></script>
 <script src="scripts/jquery.superfish.js"></script>
 <script src="scripts/jquery.royalslider.min.js"></script>
@@ -385,4 +359,5 @@
 
 </body>
 
+<!-- Mirrored from www.vasterad.com/themes/chow/recipe-page-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 02 Mar 2018 20:35:41 GMT -->
 </html>
